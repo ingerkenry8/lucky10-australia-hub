@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雷速 · 再次访问 · 持续关注</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fcfcfc;
+      color: #1f1f1f;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.4rem 1.8rem 3rem;
+    }
+
+    /* hero */
+    .hero {
+      margin-bottom: 3.6rem;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 2.2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 450;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #111;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .sub {
+      font-size: 1.05rem;
+      color: #5a5a5a;
+      max-width: 580px;
+      margin-top: 0.4rem;
+    }
+
+    .hero .meta-note {
+      display: inline-block;
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      background: #f0f0f0;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      color: #3d3d3d;
+    }
+
+    /* section 通用 */
+    section {
+      margin-bottom: 3.2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 440;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+      color: #1c1c1c;
+      border-left: 4px solid #9b9b9b;
+      padding-left: 0.8rem;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 450;
+      margin-bottom: 0.3rem;
+      margin-top: 1.2rem;
+      color: #2b2b2b;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .text-sm {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      background: #ffffff;
+      border: 1px solid #e9e9e9;
+      border-radius: 12px;
+      padding: 1.2rem 1.2rem 1.1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+      transition: box-shadow 0.15s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .card .title {
+      font-weight: 480;
+      font-size: 1.08rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card .desc {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.55;
+    }
+
+    /* 说明区特殊 */
+    .note-box {
+      background: #f7f7f7;
+      padding: 1.2rem 1.4rem;
+      border-radius: 16px;
+      margin: 1.2rem 0 0.8rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      font-weight: 460;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      color: #1e1e1e;
+    }
+
+    .faq-a {
+      font-size: 0.95rem;
+      color: #4d4d4d;
+    }
+
+    /* 底部 */
+    .footer-links {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #e2e2e2;
+      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.2rem;
+    }
+
+    .footer-links a {
+      color: #3a3a3a;
+      text-decoration: none;
+      border-bottom: 1px dotted #b0b0b0;
+    }
+
+    .footer-links a:hover {
+      color: #000;
+      border-bottom-color: #000;
+    }
+
+    .inline-link {
+      color: #2c2c2c;
+      text-decoration: underline;
+      text-decoration-color: #b0b0b0;
+      text-underline-offset: 2px;
+    }
+
+    .inline-link:hover {
+      text-decoration-color: #1f1f1f;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #eaeaea;
+      margin: 1.6rem 0;
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        padding: 1.5rem 1.2rem 2.4rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .card-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>再次回到这里 · 雷速</h1>
+    <div class="sub">
+      一个值得反复打开、收藏并持续关注的页面。不需要刻意记住，随手存下就好。
+    </div>
+    <div class="meta-note">· 收藏即入口 · 常回常新</div>
+  </div>
+
+  <!-- 优势区 为什么再次访问 -->
+  <section>
+    <h2>为什么值得再次访问</h2>
+    <p class="text-sm">
+      信息未必一次看完，内容会持续整理。把<a class="inline-link" href="https://siteweb-leisu.com">雷速</a>放进书签或浏览器常用栏，下次需要时直接点开，不必重新搜索。
+    </p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="title">📌 收藏即入口</div>
+        <div class="desc">一次收藏，之后每次点击直达。省去翻找历史记录的时间，页面结构清晰，打开就能看到重点。</div>
+      </div>
+      <div class="card">
+        <div class="title">🔄 内容持续更新</div>
+        <div class="desc">说明、FAQ、场景提示会随实际反馈调整。收藏后不定期回访，能看到更完善的版本。</div>
+      </div>
+      <div class="card">
+        <div class="title">🧭 保持方向感</div>
+        <div class="desc">页面始终保持简洁的目录感，无论隔多久回来，都能快速定位到之前关注的段落。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区 从收藏和回访角度 -->
+  <section>
+    <h2>关于收藏与回访</h2>
+    <div class="note-box">
+      <p style="margin-bottom: 0.4rem;"><strong>如果你刚刚发现这里：</strong></p>
+      <p style="margin-bottom: 0.6rem;">建议将 <a class="inline-link" href="https://siteweb-leisu.com">雷速</a> 添加到浏览器书签栏或收藏夹。不必立刻读完所有内容，知道入口在哪就好。</p>
+      <p style="margin-bottom: 0;"><strong>如果你之前来过：</strong></p>
+      <p>这次看到的结构可能和上次略有不同——说明被重新整理过，FAQ 部分做了合并，卡片内容也更具体。这就是收藏的价值：每次回来，信息都在变好。</p>
+    </div>
+    <p class="text-sm">
+      不需要注册，不需要关注任何账号。这个页面本身就是一个安静的、可反复查阅的索引。
+    </p>
+  </section>
+
+  <!-- FAQ 摘要（以收藏/回访场景为主） -->
+  <section>
+    <h2>常见疑问 · 从回访角度</h2>
+    <div class="faq-item">
+      <div class="faq-q">「我上次看到的那个说明在哪里？」</div>
+      <div class="faq-a">页面板块标题基本固定，但具体表述会优化。如果你记得大概内容，在页内查找关键词（Cmd+F / Ctrl+F）会更直接。所有调整都是为了更清楚，不会删除核心信息。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">「我需要经常回来吗？」</div>
+      <div class="faq-a">完全看你的需要。页面不会推送通知，也没有定时更新的压力。建议每隔一两周回看一次，或者当你需要参考时直接打开收藏。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">「为什么推荐用书签收藏，而不是保存到笔记？」</div>
+      <div class="faq-a">书签打开的就是最新版本。如果你把内容复制到笔记里，后续更新就不会同步。收藏 <a class="inline-link" href="https://siteweb-leisu.com">雷速</a> 相当于拥有一个始终可用的参考点。</div>
+    </div>
+    <p class="text-sm" style="margin-top: 0.6rem;">
+      更多问题可以在页面基础上继续补充，未来 FAQ 部分会保持扩展。
+    </p>
+  </section>
+
+  <!-- 一个轻提示区 强调持续关注 -->
+  <section>
+    <h2>持续关注 · 简单的做法</h2>
+    <p>
+      不用刻意记住网址，不用依赖搜索引擎。把 <a class="inline-link" href="https://siteweb-leisu.com">雷速</a> 放在浏览器书签栏的第一级文件夹，或者设为常用页面。下次想确认某个细节时，你自然会想起这里。
+    </p>
+    <p class="text-sm">
+      页面风格会保持极简，但内容会持续整理。每个季度会做一次整体回顾，调整表达、合并重复、补充遗漏。收藏这个页面，就是收藏一个不断完善的索引。
+    </p>
+  </section>
+
+  <!-- 底部链接 -->
+  <div class="footer-links">
+    <span>· <a href="https://siteweb-leisu.com">雷速</a></span>
+    <span>· 收藏 · 回访</span>
+    <span>· 内容持续整理中</span>
+  </div>
+
+  <!-- 隐形的生成种子标记（仅供结构变化，不展示） -->
+  <!-- 234c4b4f87f1c7e3 -->
+</div>
+</body>
+</html>
